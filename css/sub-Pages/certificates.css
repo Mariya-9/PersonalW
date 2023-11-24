@@ -1,0 +1,126 @@
+.bg-counter {
+  position: relative;
+  background-image: url(/img/Skills.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-filter li {
+  list-style: none;
+  display: inline-block;
+}
+
+.container-filter li a {
+  display: block;
+  font-size: 11px;
+  border: 1px solid #e0e0e0;
+  color: #6c757d !important;
+  padding: 0px 15px;
+  margin: 5px 3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  line-height: 34px;
+  border-radius: 3px;
+  transition: all 0.6s;
+}
+
+.container-filter li a.active {
+  color: #fff !important;
+  border: 1px solid;
+}
+
+.container-filter li a:hover {
+  color: #fff !important;
+  border: 1px solid;
+}
+
+.spacing {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.item-box {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.item-box a {
+  display: inline-block;
+}
+
+.item-box:hover .item-mask {
+  transform: translateX(0%);
+  visibility: visible;
+}
+
+.item-box:hover .item-mask .item-caption {
+  opacity: 1;
+}
+
+.item-box:hover .item-container {
+  transform: translateX(100%);
+  transition: all 0.5s ease-in-out 0s;
+  width: 100%;
+}
+
+.item-container {
+  transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  width: 100%;
+  transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+}
+
+.item-mask {
+  background: none repeat scroll 0 0 #242a35;
+  position: absolute;
+  transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  visibility: hidden;
+  overflow: hidden;
+  transform: translateX(-100%);
+}
+
+.item-mask p {
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  margin: 0;
+  color: #fff;
+}
+
+.item-mask .item-caption {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  left: 0px;
+  right: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  opacity: 0;
+}
+
+.Talend-Technology {
+  padding: 1rem;
+  color: #333;
+
+  border-radius: 1rem;
+  background-color: #f2ebe9;
+}

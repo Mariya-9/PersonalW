@@ -1,0 +1,28 @@
+.bg-footer {
+  background: #ffffff;
+}
+
+.social-media {
+  text-decoration: none;
+  list-style: none;
+}
+
+.social-media li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 1rem;
+  color: #757f8a;
+  font-size: 1.2rem;
+  height: 38px;
+  width: 38px;
+
+  transition: all 0.4s;
+  border: 2px solid #757f8a;
+  border-radius: 50%;
+}
+
+.social-media li a:hover {
+  color: #fff;
+}

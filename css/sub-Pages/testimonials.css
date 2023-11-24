@@ -1,0 +1,51 @@
+.testimonial {
+  border-top: 3px solid;
+}
+
+.testi-img img {
+  max-width: 100px;
+}
+
+.testi-icon i {
+  position: absolute;
+  right: 45px;
+  bottom: -45px;
+}
+
+.t-card {
+  background-color: #9eb8d9;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.t-card i {
+  color: #333;
+  font-size: 2rem;
+}
+
+.t-card p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.testimonial_subtitle {
+  color: #333;
+}
+
+.controls a {
+  font-size: 2rem;
+  color: #000;
+  margin-top: 2rem;
+}
+
+.carousel-inner img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimo {
+  margin: auto;
+}

@@ -1,0 +1,162 @@
+.html {
+  font-size: 62.5%;
+}
+
+.card-body {
+  font-size: 1.6rem;
+  background-image: url("https://image.noelshack.com/fichiers/2018/30/3/1532522686-capture-d-ecran-de-2018-07-25-14-40-36.png");
+}
+
+.section__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-card {
+  height: 35rem;
+  width: 35rem;
+  /* border: 2px solid #000; */
+  padding: 2rem;
+  background-color: transparent;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.skills-card:hover .card__header {
+  height: 4rem;
+  transition: 0.3s;
+}
+
+.skills-card:hover .card__header img {
+  transform: scale(5);
+  transition: 0.3s;
+}
+
+.skills-card:hover .card__footer {
+  height: 60rem;
+  transition: 0.3s;
+}
+
+.skills-card:hover .card__footer ul li {
+  transform: translate(0);
+  transition-timing-function: cubic-bezier(0, 1.5, 1, 1);
+  transition-delay: 0.3s;
+  transition-duration: 0.3s;
+  font-weight: 600;
+}
+
+.skills-card:hover .card__footer ul li:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.skills-card:hover .card__footer ul li:nth-child(2) {
+  transition-delay: 0.4s;
+}
+
+.skills-card:hover .card__footer ul li:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
+.skills-card:hover .card__footer ul li:nth-child(4) {
+  transition-delay: 0.8s;
+}
+
+.skills-card:hover .card__footer ul li:nth-child(5) {
+  transition-delay: 1s;
+}
+
+.skills-card:hover .card__footer ul li:nth-child(6) {
+  transition-delay: 1.2s;
+}
+
+.skills-card:hover .card__footer ul li:nth-child(7) {
+  transition-delay: 1.4s;
+}
+
+.skills-card:hover .card__footer ul li:nth-child(8) {
+  transition-delay: 1.6s;
+}
+
+.skills-card:hover .card__footer ul li:nth-child(9) {
+  transition-delay: 1.8s;
+}
+
+.skills-card:hover .card__footer ul li:nth-child(10) {
+  transition-delay: 2s;
+}
+
+.card__header {
+  height: 17rem;
+  margin: -2rem -2rem 2rem -2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.card__header img {
+  width: 6rem;
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+.card__footer {
+  position: relative;
+  height: 100px;
+  background-color: transparent;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card__footer h2 {
+  color: #fff;
+  margin: 0;
+  line-height: 20px;
+  letter-spacing: 0;
+  padding-left: 2px;
+}
+
+.card__footer p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0;
+  font-weight: 400;
+  color: #333;
+
+  text-align: center;
+  background-color: #ffeeee;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.card__footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card__footer ul li {
+  font-size: 1rem;
+  margin-top: 5px;
+  font-weight: 100;
+  transform: translateX(-100%);
+  transition: 0.3s;
+  transition-duration: 0;
+  transition-delay: 0.3s;
+
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.language-span {
+  font-size: 1rem;
+}
+
+.card-skills {
+  background-color: #ffeeee;
+}
+
+.card-language {
+  background-color: #e8f9fd;
+}

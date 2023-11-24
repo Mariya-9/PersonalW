@@ -1,0 +1,94 @@
+.bg-home {
+  position: relative;
+  background-image: url(../img/corinne.jpg);
+  background-color: #9eb8d9;
+  height: 75vh;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  background-image: url(../img/corinne.jpg), #f2ebe9;
+  background-color: #9eb8d9;
+}
+
+.home-center {
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+
+.home-desc-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-title .para-desc {
+  font-size: 18px;
+  max-width: 650px;
+}
+
+.Talend li {
+  font-weight: 600;
+  padding: 1rem;
+
+  color: #fd8d14;
+  border-radius: 1rem;
+  border: 3px solid #fff;
+  background-color: #f2ebe9;
+
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.badge {
+  padding: 1rem;
+  color: #333;
+
+  border-radius: 1rem;
+  background-color: #f2ebe9;
+}
+
+.badge2 {
+  padding: 1rem;
+  color: #333;
+
+  font-size: 0.5rem;
+  border-radius: 1rem;
+  background-color: #f2ebe9;
+}
+.Talend-badge {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  color: #333;
+
+  /* border-radius: 1rem; */
+  border: 1px solid #fff;
+}
+
+.card-subText {
+  border: 1px solid #fd8d14;
+  background-color: #fff;
+
+  border-radius: 1rem;
+}
+
+.resume-section {
+  width: 70%;
+  margin: auto;
+}
+
+.resume-btn {
+  border-radius: 1rem;
+  background-color: #f2ebe9;
+  text-decoration: none;
+
+  color: #333;
+}

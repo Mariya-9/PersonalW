@@ -1,0 +1,53 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
+const { isEmail } = require('validator');
+
+const app = express();
+const port = 3000;
+
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.post('/contact', (req, res) => {
+const name = req.body.name;
+const email = req.body.email;
+const comments = req.body.comments;
+
+if (!name || !email || !comments) {
+return res.status(400).send('All fields are required.');
+}
+
+if (!isEmail(email)) {
+return res.status(400).send('Invalid email address.');
+}
+
+const transporter = nodemailer.createTransport({
+service: 'gmail',
+auth: {
+user: 'your@gmail.com', // Replace with your Gmail email
+pass: 'your_password', // Replace with your Gmail password
+},
+});
+
+const mailOptions = {
+from: email,
+to: 'example@example.net', // Replace with the recipient email address
+subject: `You have been contacted by ${name}.`,
+text: `You have been contacted by ${name}. Their additional message is as follows:\n\n"${comments}"\n\nYou can contact
+${name} via email, ${email}`,
+};
+
+transporter.sendMail(mailOptions, (error, info) => {
+if (error) {
+console.error(error);
+return res.status(500).send('Internal Server Error.');
+}
+
+res.send('<h3>Email Sent Successfully.</h3>
+<p>Thank you, your message has been submitted.</p>');
+});
+});
+
+app.listen(port, () => {
+console.log(`Server is running on port ${port}`);
+});
